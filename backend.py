@@ -10,7 +10,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 def ask_ai(messages):
     """Send conversation to OpenAI and return response"""
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-5mini",
         messages=messages,
         temperature=0.7,
     )
